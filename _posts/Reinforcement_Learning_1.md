@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Reinforcement Learning Series - 01
 published: true
 ---
 
