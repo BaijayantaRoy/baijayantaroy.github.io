@@ -30,7 +30,7 @@ Now let's understand each terminology and then we will get back to this problem.
 
 <div class="featured">
 <a href="{{ page.url }}">
-<img src="{{site.url}}/Action.png />
+<img src="{{site.url}}/Action.png"/>
 </a>
 </div>
 
