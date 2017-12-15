@@ -42,3 +42,12 @@ Now let's understand each terminology and then we will get back to this problem.
                                 Figure-03 (Policy)
 
 **Model of the Environment:**  Model is mimics of environment.
+
+Now let's get back to the problem.There are many possible ways Robot can move and reach exit. In RL, one complete cycle from start to end is called for Episode for finite problem like this. It can take many path to reach. In this problem the Robot can not return to previous state thus states like S03 are dead end without any possible solution and Robot will be stuck there for ever.
+
+![PossibleEpisodes.png]({{site.baseurl}}/_posts/PossibleEpisodes.png)
+
+Once we calculate total accumulated rewards then the path followed right is the best path as it accumulates the most number of gems even though it would take longer time to reach exit. 
+
+![ProblemSolution.png]({{site.baseurl}}/_posts/ProblemSolution.png)
+
