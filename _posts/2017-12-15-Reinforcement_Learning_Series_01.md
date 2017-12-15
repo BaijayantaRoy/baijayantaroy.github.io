@@ -14,10 +14,6 @@ For Learning anything new, understanding basic terminology is very important. To
 
 We have an multistory building with rooms as show in below diagram. Here Robotis the RL Agentfor this RL problem. Each room is depicted by a square that can be considered as a state for the problem (all are marked as S01, S02 etc for easy refence,later we will have notation for each terminology). Agent can perform 3 action (move up , left and right). As Agent move along, it collects rewards as gem(s) at each state. Agent can move only once from a room or state and can not come back. The goal for the Agent for this problem will is to obtain maximum number of Gem and reach the top level room marked as S13. Agent need to start from S01 state and then it can move to different rooms. As you can see, it’s the long term cumulative rewards that matters and not the early rewards. Some states are like dead end, even throuh those have higher rewards (S03,S09) as those don’t have any further ways to move towards exit state. This is an iteresting problem.
 
-![RL Example 01.png]({{site.baseurl}}/_posts/RL Example 01.png)
-
-                              Figure - 01 ( Reinforcement Learning Example)
-
 Now let's understand each terminology and then we will get back to this problem.
 
 **Agent:** Anything that sense its environment using some kind of sensor and able to generate action in the enviroment is called Agent. Agent execute action, receive observation and reward. Example, a robot vacum cleaner,  a software program that plays chess or Go, self driving car etc. In Figure-01, Robot is the agent.
