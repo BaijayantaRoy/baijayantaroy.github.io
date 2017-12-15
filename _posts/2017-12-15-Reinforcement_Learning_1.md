@@ -31,10 +31,14 @@ Now let's understand each terminology and then we will get back to this problem.
 **Value:** Value of is the total amout of reward an agent can expect to accumulate over the period starting from that state. Unlike Reward signal, value function specifis what is good in the _long run_. Since Value is total amount of return from a state, for state s12, value would be 6 gems.
 
 **Action:** Action is what an  agent can do in each state. In above example Robot it can take action like move up or left or right. Given the state, or positions of its two legs, a robot can take steps within a certain distance. There are typically finite (or a fixed range of) actions an agent can take. For example, a robot stride can only be, say, 0.01 meter to 1 meter. The Go program can only put down its piece in one of 19 x 19 (that is 361) positions. In the above example problem , Robot can take 3 action like moving up or right or left. 
+![Action.png]({{site.baseurl}}/_posts/Action.png)
+
+                                Figure-02 (Action)
 
 **Policy:** Policy is the agent’s action selection from a state. It’s a mapping of action in a state with probability for each possible action. In many RL solution goal would be to find optimal policy meaning find the best action in that state that will maximize the long term reward. It dictates what action to take given a particular state. A policy is a function can be either deterministic or stochastic.below could be policy diagram for each state which is the mapping of action in each state.
 
 ![RL Example Policy.png]({{site.baseurl}}/_posts/RL Example Policy.png)
-                                Figure-02 (Policy)
+
+                                Figure-03 (Policy)
 
 **Model of the Environment:**  Model is mimics of environment.
