@@ -2,14 +2,14 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+Roy has more than 15 years of experience in Payment and CreditCard domain. He has worked in multinational and local banks in Singapore. His interest spans from Machine Learning to Quantum Computing to Block Chain.
+He is deeply involved in Reiforcement Learning and Machine Learning for last couple years.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+"Data speaks for itself, no one can change that"
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[baijayanta_roy@yahoo.com](mailto:baijayanta_roy@yahoo.com)
