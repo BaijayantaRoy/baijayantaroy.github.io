@@ -4,7 +4,7 @@ title: Reinforcement Learning Series - 01
 published: true
 ---
 
-_Reinforcement Learning ( will be referred as RL as well here) is one of the most exciting field of Artificial Intelligence (AI) which has shown huge progress in last few years. Though RL existed for many decades, after explosion of Neural network based deep learning, this field too exploded with innovation and  excitement. There are numerous books, videos and articles/papers which are written by experts in the field (refer to reference section).This blog is an attempt to explain basic concepts of Reinforcement Learning using simple example and explanation that anyone with a basic english knowledge. I am not a native english speaker and a self learner of Machine Learning/RL with aid from all the books, videos and blogs/writings from where I borrowed most of the content. If you find any error or sentences not conveying right meaning, please drop me a mail and I will try to correct or rewrite the section._
+_**Reinforcement Learning (RL) is one of the most happening field of Artificial Intelligence (AI) and RL whas shown huge progress in last few years. Though RL existed for many decades, after explosion of Neural network based deep learning, this field has exploded with innovation and  excitement. There are numerous books, videos and articles/papers which are written by experts in the field (refer to reference section).This blog is an attempt to explain basic concepts of Reinforcement Learning using simple example and explanation that anyone with a basic english knowledge would be able to understand. I am not a native english speaker and a self learner of Machine Learning/RL with aid from all the books, videos and blogs/writings from where I borrowed most of the learning,content and idea. If you find any error or sentences not conveying right meaning, please drop me a mail and I will try to correct or rewrite the section.Happy learning**_
 
 
 ### Reinforcement Learning
@@ -50,4 +50,3 @@ Now let's get back to the problem.There are many possible ways Robot can move an
 Once we calculate total accumulated rewards then the path followed right is the best path as it accumulates the most number of gems even though it would take longer time to reach exit. 
 
 ![ProblemSolution.png]({{site.baseurl}}/_posts/ProblemSolution.png)
-
