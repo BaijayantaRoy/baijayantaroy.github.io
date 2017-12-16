@@ -28,18 +28,18 @@ Now let's understand each terminology and then we will get back to this problem.
 
 **Action:** Action is what an  agent can do in each state. In above example Robot it can take action like move up or left or right. Given the state, or positions of its two legs, a robot can take steps within a certain distance. There are typically finite (or a fixed range of) actions an agent can take. For example, a robot stride can only be, say, 0.01 meter to 1 meter. The Go program can only put down its piece in one of 19 x 19 (that is 361) positions. In the above example problem , Robot can take 3 action like moving up or right or left. 
 
-![Jekyll Now Theme Screenshot](/images/Action.png "Jekyll Now Theme Screenshot")
+![Action that Robot can take](/images/Action.png "Action that Robot can take")
 
 **Policy:** Policy is the agent’s action selection from a state. It’s a mapping of action in a state with probability for each possible action. In many RL solution goal would be to find optimal policy meaning find the best action in that state that will maximize the long term reward. It dictates what action to take given a particular state. A policy is a function can be either deterministic or stochastic.below could be policy diagram for each state which is the mapping of action in each state.
 
-![RL Example Policy.png]({{site.baseurl}}/RL Example Policy.png)
+![Policy Example](/_posts/RL Example Policy.png "Policy Example")
 
 **Model of the Environment:**  Model is mimics of environment.
 
 Now let's get back to the problem.There are many possible ways Robot can move and reach exit. In RL, one complete cycle from start to end is called for Episode for finite problem like this. It can take many path to reach. In this problem the Robot can not return to previous state thus states like S03 are dead end without any possible solution and Robot will be stuck there for ever.
 
-![PossibleEpisodes.png]({{site.baseurl}}/_posts/PossibleEpisodes.png)
+![Possible Episodes](/_posts/PossibleEpisodes.png "Possible Episodes")
 
 Once we calculate total accumulated rewards then the path followed right is the best path as it accumulates the most number of gems even though it would take longer time to reach exit. 
 
-![ProblemSolution.png]({{site.baseurl}}/_posts/ProblemSolution.png)
+![Problem Solution](/_posts/ProblemSolution.png "Problem Solution")
