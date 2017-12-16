@@ -32,8 +32,6 @@ Now let's understand each terminology and then we will get back to this problem.
 
 **Policy:** Policy is the agent’s action selection from a state. It’s a mapping of action in a state with probability for each possible action. In many RL solution goal would be to find optimal policy meaning find the best action in that state that will maximize the long term reward. It dictates what action to take given a particular state. A policy is a function can be either deterministic or stochastic.below could be policy diagram for each state which is the mapping of action in each state.
 
-![Policy Example](/_posts/RL Example Policy.png "Policy Example")
-
 **Model of the Environment:**  Model is mimics of environment.
 
 Now let's get back to the problem.There are many possible ways Robot can move and reach exit. In RL, one complete cycle from start to end is called for Episode for finite problem like this. It can take many path to reach. In this problem the Robot can not return to previous state thus states like S03 are dead end without any possible solution and Robot will be stuck there for ever.
