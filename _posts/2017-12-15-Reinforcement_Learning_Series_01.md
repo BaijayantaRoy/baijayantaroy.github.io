@@ -4,15 +4,17 @@ title: Reinforcement Learning Series - 01
 published: true
 ---
 
-_**Reinforcement Learning (RL) is one of the most happening field of Artificial Intelligence (AI) and RL whas shown huge progress in last few years. Though RL existed for many decades, after explosion of Neural network based deep learning, this field has exploded with innovation and  excitement. There are numerous books, videos and articles/papers which are written by experts in the field (refer to reference section).This blog is an attempt to explain basic concepts of Reinforcement Learning using simple example and explanation that anyone with a basic english knowledge would be able to understand. I am not a native english speaker and a self learner of Machine Learning/RL with aid from all the books, videos and blogs/writings from where I borrowed most of the learning,content and idea. If you find any error or sentences not conveying right meaning, please drop me a mail and I will try to correct or rewrite the section.Happy learning.**_
+_**Reinforcement Learning (RL) is one of the most happening field of Machine Learning (ML) and Artificial Intelligence (AI).Though RL existed for many decades, only recently the giant has awakened after explosion in Neural Network based Deep Learning. This blog is an attempt to explain basic concepts of Reinforcement Learning using simple example and explanation that anyone with a basic english knowledge would be able to understand. I am not a native english speaker, thus if you find any error or sentences not conveying right meaning, please drop me a mail and I will try to correct or rewrite .I am a self learner of RL assisted by numerous books, videos and blogs/writings and I have borrowed many ideas and content from these. **_
 
 
 ### Reinforcement Learning
-Reinforcement learning is learning by interacting with an environment. An RL agent learns from the consequences of its actions, rather than from being explicitly taught and it selects its actions on basis of its past experiences (exploitation) and also by new choices (exploration), which is essentially trial and error learning just like a child learn. The reinforcement signal that the RL-agent receives is a numerical reward, which encodes the success of an action's outcome, and the agent seeks to learn to select actions that maximize the accumulated reward over time. 
+Reinforcement learning is learning by interacting with an environment. An RL agent learns from the consequences of its actions, rather than from being explicitly taught and it selects its actions on basis of its past experiences (exploitation) and also by new choices (exploration), which is essentially trial and error learning just like a child learns. The reinforcement signal that the RL-agent receives is a numerical reward, which encodes the success of an action's outcome, and the agent seeks to learn to select actions that maximize the accumulated reward over time. 
 
 For Learning anything new, understanding basic terminology is very important. To understand RL, reader has to get familiar with below terminology, their meaning and above all how these terms are linked to each other, but before that lets see one example to understand what Reinforcement Learning means.
 
-We have an multistory building with rooms as show in below diagram. Here Robotis the RL Agentfor this RL problem. Each room is depicted by a square that can be considered as a state for the problem (all are marked as S01, S02 etc for easy refence,later we will have notation for each terminology). Agent can perform 3 action (move up , left and right). As Agent move along, it collects rewards as gem(s) at each state. Agent can move only once from a room or state and can not come back. The goal for the Agent for this problem will is to obtain maximum number of Gem and reach the top level room marked as S13. Agent need to start from S01 state and then it can move to different rooms. As you can see, it’s the long term cumulative rewards that matters and not the early rewards. Some states are like dead end, even throuh those have higher rewards (S03,S09) as those don’t have any further ways to move towards exit state. This is an iteresting problem.
+In this example we have a multistory building with rooms as shown in below diagram. Here Robot is the RL Agent for this RL problem. Each room is depicted by a square that can be considered as a State for the problem (all States are marked as S01, S02 etc for easy refence,later we will have notation for each terminology). Agent can perform 3 action (move up , left and right). As Agent move along, it collects rewards gem(s) at each state. Agent can move only once from a room or state and can not come back. The goal for the Agent for this problem is to obtain maximum number of Gem and reach the top level room marked as S13 and exit from there. Agent need to start from S01 state and then it can move to different rooms. As you can see, it’s the long term cumulative rewards that matters and not the early rewards. Some states are like dead end, even throuh those have higher rewards (S03,S09) as those don’t have any further ways to move towards exit state. In this problem Agent interacts with the environement, take action and collect reward but Agent is not exlicitly told what patch of movement it should take or what is the maximum possible reward in a long run. RL algorithm assist Robot to find optimal way of taking action in each step and maximize its long term goal within the conditions set in the environment.
+
+![RL Example](/images/RL_example.png "Reinforcement Learning Example")
 
 Now let's understand each terminology and then we will get back to this problem.
 
@@ -32,12 +34,15 @@ Now let's understand each terminology and then we will get back to this problem.
 
 **Policy:** Policy is the agent’s action selection from a state. It’s a mapping of action in a state with probability for each possible action. In many RL solution goal would be to find optimal policy meaning find the best action in that state that will maximize the long term reward. It dictates what action to take given a particular state. A policy is a function can be either deterministic or stochastic.below could be policy diagram for each state which is the mapping of action in each state.
 
+![Policy](/images/policy.png "policy")
+
+
 **Model of the Environment:**  Model is mimics of environment.
 
 Now let's get back to the problem.There are many possible ways Robot can move and reach exit. In RL, one complete cycle from start to end is called for Episode for finite problem like this. It can take many path to reach. In this problem the Robot can not return to previous state thus states like S03 are dead end without any possible solution and Robot will be stuck there for ever.
 
-![Possible Episodes](/_posts/PossibleEpisodes.png "Possible Episodes")
+![Possible Episodes](/images/PossibleEpisodes.png "Possible Episodes")
 
 Once we calculate total accumulated rewards then the path followed right is the best path as it accumulates the most number of gems even though it would take longer time to reach exit. 
 
-![Problem Solution](/_posts/ProblemSolution.png "Problem Solution")
+![Problem Solution](/images/Optimal_move.png "Problem Solution")
