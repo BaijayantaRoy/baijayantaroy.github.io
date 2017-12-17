@@ -2,6 +2,8 @@
 layout: post
 title: Reinforcement Learning Series - 01
 published: true
+comments: true
+
 ---
 
 _**Reinforcement Learning (RL) is one of the most happening field of Machine Learning (ML) and Artificial Intelligence (AI).Though RL existed for many decades, only recently the giant has awaken after explosion in Neural Network based Deep Learning. This blog is an attempt to explain basic concepts of Reinforcement Learning using simple example and explanation that anyone with elementary English knowledge would be able to understand. I am not a native English speaker, thus if you find any error or sentences not conveying right meaning, please drop me a mail and I will try to correct or rewrite .I am a self-learner of RL and ML assisted by numerous books, videos and blogs/writings and i am indebted to those scholars and writers. I have borrowed many ideas from them for this writing. Wish you a happy learning. **_
