@@ -4,17 +4,20 @@ title: Reinforcement Learning Series - 02
 published: true
 ---
 
-_**Reinforcement Learning (RL) is one of the most happening field of Machine Learning (ML) and Artificial Intelligence (AI). Though RL existed for many decades, only recently the giant has awaken after explosion in Neural Network based Deep Learning. This blog is an attempt to explain basic concepts of Reinforcement Learning using simple example and explanation that anyone with elementary English knowledge would be able to understand. I am not a native English speaker, thus if you find any error or sentences not conveying right meaning, please drop me a mail and I will try to correct or rewrite. This is a series of Blogs on RL, you may want to go through post 1 before starting this blog.**_
+_**This is a part of series of Blogs on Reinforcement Learning(RL), you may want to go through post 1 before starting this blog.**_
 
 In the first part (link) of the blog I have covered basic terminology needed to understand RL. In this blog I will cover RL problem description using Markov Decision Process (MDP), Bellman equation and solving MDP using Dynamic Programming. 
 I briefly mentioned Exploitation and Exploration in first post. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favourite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exist a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging. 
 
-**Markov Decision Processes:** Markov Decision Process (MDP) is a mathematical representation of a complex decision-making process. (MDP) formally describe an environment for Reinforcement Learning. Environment is fully observable and stationary (meaning rules do not change with time). Almost all RL problems can be formalized using MDP.MDP is defined by:
+**Markov Decision Processes:** Markov Decision Process (MDP) is a mathematical representation of a complex decision-making process. (MDP) formally describe an environment for Reinforcement Learning. Environment is fully observable and stationary (meaning rules do not change with time). Almost all RL problems can be formalized using MDP. MDP is defined by:
 
-    •	A state S, which represents every state that one could be in, within a defined world. Only the present matters; which means that the transition function only depends on the current state S and not any of the previous states.
-    •	A model or transition function T; which is a function of the current state, the action taken and the state where we end up. This transition produces a certain probability of ending up in state S’, starting from the state S and taking the action A.
-    •	Actions are things I can do in a particular state.
-    •	A reward is a scaler value for being in a state. It tells us the usefulness of entering the state.
+•	A state S, which represents every state that one could be in, within a defined world. Only the present matters; which means that the transition function only depends on the current state S and not any of the previous states.
+
+•	A model or transition function T; which is a function of the current state, the action taken and the state where we end up. This transition produces a certain probability of ending up in state S’, starting from the state S and taking the action A.
+
+•	Actions are things I can do in a particular state.
+
+•	A reward is a scaler value for being in a state. It tells us the usefulness of entering the state.
     
 The final goal of the MDP is to find a policy that can tell us, for any state, which action to take (remember, mapping of states to actions is our policy). The optimal policy is the one that maximizes the long-term expected reward. Once optimal policy is found, RL problem is solved.
 
