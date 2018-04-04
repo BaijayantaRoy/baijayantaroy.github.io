@@ -6,7 +6,9 @@ published: true
 
 _**This is a part of series of Blogs on Reinforcement Learning (RL), you may want to go through first blog [Reinforcement Learning Series - 01](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) before starting this blog.**_
 
-In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) of the series, I have covered basic terminology needed to understand RL. In this blog I will cover RL problem description using Markov Decision Process (MDP), Bellman equation and solving MDP using Dynamic Programming. 
+In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) of the series, I have covered basic terminology needed to understand RL. In this blog I will cover RL problem description using Markov Decision Process (MDP), Bellman equation and solving MDP using Dynamic Programming. First i will introduce few notations (don't get intimidated by these as they are not necessarily scarry as they might look at fist sight and mainly needed for mathematical expression). Below are few commonly used notation we will refer time to time and will introduce few more along the way of this RL journey.
+
+![Standard Notation](/images/Notation.png "Standard Notation")
 
 I briefly mentioned exploitation and exploration in first blog. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favourite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exist a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging. 
 
