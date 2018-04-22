@@ -5,8 +5,8 @@ permalink: /about/
 published: true
 ---
 
-Roy has more than 15 years of experience in Payment and CreditCard. He has worked in multinational and local banks in Singapore. His interest spans from Machine Learning to Quantum Computing to BlockChain. 
-He is deeply involved in Reinforcement Learning and Machine Learning for last couple of years.
+Roy has more than 15 years of experience in Payment domain. His interest spans from Artificial Intelligence to Quantum Computing to Block-Chain. He has worked in multinational and local banks in Singapore. 
+He is deeply involved in Reinforcement Learning and Machine Learning projects for last couple of years in areas like stock price prediction using astrological data, real time augmented fraud protection for credit card etc.
 
 **"Data speaks for itself"**
 
