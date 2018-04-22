@@ -6,7 +6,7 @@ published: true
 
 _**This is a part of series of Blogs on Reinforcement Learning (RL), you may want to go through first blog [Reinforcement Learning Series - 01](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) before starting this blog.**_
 
-In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) of the series, I have covered basic terminology needed to understand RL. In this blog I will cover RL problem description using Markov Decision Process (MDP), Bellman equation and solving MDP using Dynamic Programming. First i will introduce few notations (don't get intimidated by these as they are not necessarily scarry as they might look at fist sight and mainly needed for mathematical expression). Below are few commonly used notation we will refer time to time and will introduce few more along the way of this RL journey.
+In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) of the series, I have covered basic terminology needed to understand RL. In this blog I will cover RL problem description using Markov Decision Process (MDP), Bellman equation and solving MDP using Dynamic Programming. First I will introduce few notations (don't get intimidated by these as they are not necessarily scarry as they might look at fist sight and mainly needed for mathematical expression). Below are few commonly used notation we will refer time to time and will introduce few more along the way of this RL journey.
 
 ![Standard Notation](/images/Notation.png "Standard Notation")
 
@@ -43,10 +43,14 @@ We will discuss two well-known DP algorithm for RL, Value Iteration and Policy I
 
 **Value Iteration:** To solve the Bellman equation we normally start with arbitrary values for all states and then update them based on the neighbors (which are all the states that it can reach from the current state I am in). Finally, we repeat that until convergence. This process is called “value iteration”.
 Value Iteration is a combination of one (or more than one) sweep of policy evaluation and then perform another sweep of policy improvement. Repeat the process still convergence happens.
+
+![Value Iteration](/images/ValueIteration.png "Value Iteration")
+
 Value iteration includes: **finding optimal value function** + one **policy extraction**. There is no repeat of the two because once the value function is optimal, then the policy out of it should also be optimal (i.e. converged). **Finding optimal value function** can also be seen as a combination of policy improvement (due to max) and truncated policy evaluation (the reassignment of V(S) after just one sweep of all states regardless of convergence).
 
 **Policy Iteration:** This is a GPI process in which policy is improved by performing monotonically improving policies and value functions: by repeating policy evaluation and then performing a policy improvement. Each policy is guaranteed to be a strict improvement over the previous one (unless it is already optimal). Because a finite MDP has only a finite number of policies, this process must converge to an optimal policy and optimal value function in a finite number of iterations. This way of finding an optimal policy is called policy iteration.
 
+![Policy Iteration](/images/PolicyIteration.png "Policy Iteration")
+
 Policy iteration includes: **policy evaluation** + **policy improvement**, and the two are repeated iteratively until policy converges
 
-![Policy Iteration](/images/PolicyIteration.png "Policy Iteration")
