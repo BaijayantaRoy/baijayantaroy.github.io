@@ -48,3 +48,5 @@ Value iteration includes: **finding optimal value function** + one **policy extr
 **Policy Iteration:** This is a GPI process in which policy is improved by performing monotonically improving policies and value functions: by repeating policy evaluation and then performing a policy improvement. Each policy is guaranteed to be a strict improvement over the previous one (unless it is already optimal). Because a finite MDP has only a finite number of policies, this process must converge to an optimal policy and optimal value function in a finite number of iterations. This way of finding an optimal policy is called policy iteration.
 
 Policy iteration includes: **policy evaluation** + **policy improvement**, and the two are repeated iteratively until policy converges
+
+![Policy Iteration](/images/PolicyIteration.png "Policy Iteration")
