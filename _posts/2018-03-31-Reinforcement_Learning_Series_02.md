@@ -15,12 +15,9 @@ I briefly mentioned exploitation and exploration in first blog. This concept is 
 **Markov Decision Processes:** Markov Decision Process (MDP) is a mathematical representation of a complex decision-making process. (MDP) formally describe an environment for Reinforcement Learning. Environment is fully observable and stationary (meaning rules do not change with time). Almost all RL problems can be formalized using MDP. MDP is defined by:
 
  - A state s, which represents every state that one could be in, within a defined world. Only the present matters; which means that the transition function only depends on the current state s and not any of the previous states.
- - A model or transition function p or p(s',r|s,a) ; which is a function of the current state, the action taken and the state where we end up. This transition produces a certain probability of ending up in state s', earning reward r on the way, starting from the state s and taking the action a.
+ - A model or transition function p ; which is a function of the current state, the action taken and the state where we end up. This transition produces a certain probability of ending up in state s', earning reward r on the way, starting from the state s and taking the action a.
  - Actions are things I can do in a particular state.
  - A reward is a scaler value for being in a state. It tells us the usefulness of entering the state.
-
-
-
     
 The final goal of the MDP is to find a policy that can tell us, for any state, which action to take (remember, mapping of states to actions is our policy). The optimal policy is the one that maximizes the long-term expected reward. Once optimal policy is found, RL problem is solved.
 
