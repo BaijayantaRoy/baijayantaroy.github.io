@@ -6,11 +6,11 @@ published: true
 
 _**This is a part of series of Blogs on Reinforcement Learning (RL), you may want to go through first blog [Reinforcement Learning Series - 01](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) before starting this blog.**_
 
-In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) of the series, I have covered basic terminology needed to understand RL. In this blog I will cover RL problem description using Markov Decision Process (MDP), Bellman equation and solving MDP using Dynamic Programming. First I will introduce few notations (don't get intimidated by these as they are not necessarily scarry as they might look at fist sight and mainly needed for mathematical expression). Below are few commonly used notation we will refer time to time and will introduce few more along the way of this RL journey.
+In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/) of the series, I have covered basic terminology needed to understand RL. In this blog I will cover RL problem description using Markov Decision Process (MDP), Bellman equation and solving MDP using Dynamic Programming. First, I will introduce few notations (don't get intimidated by these as they are not necessarily scary as they might look at first sight and mainly needed for mathematical expression). Below are few commonly used notations we will refer time to time and will introduce few more along the way of this RL journey.
 
 ![Standard Notation](/images/Notation.png "Standard Notation")
 
-I briefly mentioned exploitation and exploration in first blog. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favourite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exist a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging. 
+I briefly mentioned exploitation and exploration in first blog. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favorite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exist a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging. 
 
 **Markov Decision Processes:** Markov Decision Process (MDP) is a mathematical representation of a complex decision-making process. (MDP) formally describe an environment for Reinforcement Learning. Environment is fully observable and stationary (meaning rules do not change with time). Almost all RL problems can be formalized using MDP. MDP is defined by:
 
@@ -25,11 +25,11 @@ The final goal of the MDP is to find a policy that can tell us, for any state, w
 
 The “discount” (γ) mentioned above is a value between zero and one, and it allows us to treat an infinite sequence with finite value, otherwise the value in an infinite time horizon will always be the same, of an infinite magnitude (it is also mathematically more reasonable to use. Reward received in future is not as valuable as received immediately. Thus, discount factor is used to determine present value of future reward (similar to present value of future money discounted due to factors like inflation). The value of receiving reward R after k + 1 time-steps is γ<sup>k</sup>R.  
 
-If we represent Gem collection RL problem as MDP then for every state we can update the value of that state as per Bellman Equation. If we take all action as stochastic(meaning every action has a probability) then we need to bring in transition function which tells what is the probability of moving from a state to a next step. Refer to below diagram how states are related to each other for one specific episode.
+If we represent Gem collection RL problem as MDP then for every state we can update the value of that state as per Bellman Equation. If we take all action as stochastic (meaning every action has a probability) then we need to bring in transition function which tells what is the probability of moving from one state to a next state(s). Refer to below diagram, how states are related to each other for one specific episode.
 
-![Bellman Equation](/images/BellmanEquation.png "Bellman Equation explnation for Gem collection problem")
+![Bellman Equation](/images/BellmanEquation.png "Bellman Equation explanation for Gem collection problem")
 
-If this is reprsented using mathematical equation then we can show each state value and how it can be generalised as Bellman Equation.
+If this is represented using mathematical equation then we can show each state value and how it can be generalized as Bellman Equation.
 
 ![Bellman Equation Math](/images/BellmanEquation02.png "Bellman Equation Math Representation")
 
@@ -53,4 +53,6 @@ Value iteration includes: **finding optimal value function** + one **policy extr
 ![Policy Iteration](/images/PolicyIteration.png "Policy Iteration")
 
 Policy iteration includes: **policy evaluation** + **policy improvement**, and the two are repeated iteratively until policy converges
+
+That's all for this post, in next post we will explore Monte Carlo and Temporal Difference method for Reinforcement Learning.
 
