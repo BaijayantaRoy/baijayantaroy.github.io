@@ -21,9 +21,17 @@ I briefly mentioned exploitation and exploration in first blog. This concept is 
     
 The final goal of the MDP is to find a policy that can tell us, for any state, which action to take (remember, mapping of states to actions is our policy). The optimal policy is the one that maximizes the long-term expected reward. Once optimal policy is found, RL problem is solved.
 
-**Bellman Equation:** The value of a certain state is equal to the reward in the current state, plus the discount from all the rewards I get from that point on, transitioning from the current state to a future state.
+**Bellman Equation:** The value of a certain state is equal to the reward in the current state, plus the discount from all the rewards I get from that point on, transitioning from the current state s to a future state s'.
 
 The “discount” (γ) mentioned above is a value between zero and one, and it allows us to treat an infinite sequence with finite value, otherwise the value in an infinite time horizon will always be the same, of an infinite magnitude (it is also mathematically more reasonable to use. Reward received in future is not as valuable as received immediately. Thus, discount factor is used to determine present value of future reward (similar to present value of future money discounted due to factors like inflation). The value of receiving reward R after k + 1 time-steps is γ<sup>k</sup>R.  
+
+If we represent Gem collection RL problem as MDP then for every state we can update the value of that state as per Bellman Equation. If we take all action as stochastic(meaning every action has a probability) then we need to bring in transition function which tells what is the probability of moving from a state to a next step. Refer to below diagram how states are related to each other for one specific episode.
+
+![Bellman Equation](/images/BellmanEquation.png "Bellman Equation explnation for Gem collection problem")
+
+If this is reprsented using mathematical equation then we can show each state value and how it can be generalised as Bellman Equation.
+
+![Bellman Equation Math](/images/BellmanEquation02.png "Bellman Equation Math Representation")
 
 **Dynamic Programming:** Dynamic programming is a well-known technique to solve many problems by using past knowledge to solve future problem. It breaks down a complex problem into a collection of sub problem. Then solves this subproblem and store them to refer again to solve the main problem, it's a divide and conquer strategy. DP can be used to solve RL problem when a perfect model of environment as a MDP is available. Its limitation is, in real life most of the environment cannot be modeled as a perfect MDP and computation expense in DP is too high. But still DP plays an important role to understand how RL problem can be solved.
 We will discuss two well-known DP algorithm for RL, Value Iteration and Policy Iteration. First, we consider how to compute the state-value function V(S) for an arbitrary policy π . This is called **policy evaluation** in the DP literature (also referred as the **prediction** problem). The process of making a new policy that improves on an original policy, by making it greedy with respect to the value function of the original policy, is called **policy improvement**.
