@@ -4,7 +4,8 @@ title: Reinforcement Learning Series - 03
 published: true
 ---
 
-_**This is a part of series of Blogs on Reinforcement Learning (RL), you may want to go through earlier Blogs [Reinforcement Learning Series - 01](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/)[02] (https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_02/)
+_**This is a part of series of Blogs on Reinforcement Learning (RL), you may want to go through earlier Blogs [Reinforcement Learning Series - 01](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01/)
+[02](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_02/)
 before this blog.**_
 
 In first two post I covered basic concepts, LEGO blocks of reinforcement learning and briefly covered fundamental concept of MDP, Bellman equations and Dynamic programming.
