@@ -16,4 +16,5 @@ In a back-up diagram State value is represented by a hollow circle while a state
 
 ![Backup Diagram Notation](/images/backup1.png "Backup Diagram Notation")
 
+![Backup Diagram State Value](/images/backup2.png "Backup Diagram State value")
 *
