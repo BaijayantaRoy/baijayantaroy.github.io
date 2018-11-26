@@ -13,7 +13,6 @@ In this post I will go in details about back-up diagram. As picture tells a thou
 
 In a back-up diagram State value is represented by a hollow circle while a state-action value or action value is represented by a solid circle. Action is represented by a arrow. Reward is conventionally shown after the action value. Action that result in maximum action value is shown here as Argmax. Refer to below diagrams for standard depiction of different representation
 
-![Backup Diagram Notation](/image/backup1.png "Backup Diagram Notation")
-
+![Backup Diagram Notation](/images/backup1.png "Backup Diagram Notation")
 
 *
