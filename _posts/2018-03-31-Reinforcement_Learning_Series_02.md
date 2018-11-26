@@ -10,7 +10,7 @@ In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Rein
 
 ![Standard Notation](/images/Notation.png "Standard Notation")
 
-I briefly mentioned exploitation and exploration in first blog. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favorite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exist a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging. 
+I briefly mentioned exploitation and exploration in first blog. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favorite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exist a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging.
 
 **Markov Decision Processes:** Markov Decision Process (MDP) is a mathematical representation of a complex decision-making process. (MDP) formally describe an environment for Reinforcement Learning. Environment is fully observable and stationary (meaning rules do not change with time). Almost all RL problems can be formalized using MDP. MDP is defined by:
 
@@ -18,7 +18,7 @@ I briefly mentioned exploitation and exploration in first blog. This concept is 
  - A model or transition function p ; which is a function of the current state, the action taken and the state where we end up. This transition produces a certain probability of ending up in state s', earning reward r on the way, starting from the state s and taking the action a.
  - Actions are things I can do in a particular state.
  - A reward is a scaler value for being in a state. It tells us the usefulness of entering the state.
-    
+
 The final goal of the MDP is to find a policy that can tell us, for any state, which action to take (remember, mapping of states to actions is our policy). The optimal policy is the one that maximizes the long-term expected reward. Once optimal policy is found, RL problem is solved.
 
 **Bellman Equation:** The value of a certain state is equal to the reward in the current state, plus the discount from all the rewards I get from that point on, transitioning from the current state s to a future state s'.
@@ -54,5 +54,4 @@ Value iteration includes: **finding optimal value function** + one **policy extr
 
 Policy iteration includes: **policy evaluation** + **policy improvement**, and the two are repeated iteratively until policy converges
 
-That's all for this post, in next post we will explore Monte Carlo and Temporal Difference method for Reinforcement Learning.
-
+That's all for this post, in next post we will explore more concepts around Reinforcement Learning 
