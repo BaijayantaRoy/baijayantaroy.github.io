@@ -24,6 +24,12 @@ As shown in above diagram:
   1. [ ] s is the starting state and it is the root node
   2. [ ] from state s there can be three action as shown by arrow and agent take action as per policy π
   3. [ ] state action value or action is shown by solid circle (it is the convention that action is taken from a state and reward is received after the action is taken ).
-  4. [ ] Once action is taken the agent can end up in different state if it is a stochastic environment. I have shown 3 possible state that agent can land into after the right most action is taken. 3 transitions are shown in blue arrow with transition probability reward obtained is r which also depends on transition dynamics.
+  4. [ ] Once action is taken the agent can end up in different state if it is a stochastic environment. I have shown 3 possible state that agent can land into after the right most action is taken. 3 transitions are shown in blue arrow with transition probability reward obtained is r which also depends on transition dynamics and the action taken.
 
 **Backup diagram of State-Action Value function under a stochastic policy π**
+Similar to State value function we can create backup diagram for action value function or state-action value function. In this case root node is solid circle.
+![Backup Diagram Action Value](/images/backup4.png "Backup Diagram Action value")
+
+In below backup diagram I show how each components can be seen for a better intuition.
+
+![Backup Diagram Complete](/images/backup3.png "Backup Diagram Complete")
