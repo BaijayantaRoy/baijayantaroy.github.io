@@ -37,7 +37,7 @@ In below backup diagram I show how each components can be seen for a better intu
 ![Backup Diagram Complete](/images/backup3.png "Backup Diagram Complete")
 
   1) Value of the state is v(s) at state s
-  2) From state s, agent can take 3 actions (a1, a2, a3)
+  2) From state s, agent can take 3 actions (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>)
   3) Action value is q(a,s) for the action taken wheren a = {a1, a2, a3}
   4) After the action a3 is taken agent can land in state s1', s2' or S3' and transition probability is p1, p2 and p3 respectively (note similary there would be state should agent choose action a1 or a2 and corresponding transition probability would be there
   5) Reward collected is shown as r1, r2 or r3 based on state landed 
