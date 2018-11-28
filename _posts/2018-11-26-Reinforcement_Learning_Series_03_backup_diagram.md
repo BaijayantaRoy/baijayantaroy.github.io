@@ -42,3 +42,4 @@ In below backup diagram I show how each components can be seen for a better intu
   4) After the action a<sub>3</sub> is taken agent can land in state s'<sub>1</sub>, s'<sub>2</sub> or s'<sub>3</sub> and transition probability is p<sub>1</sub>, p<sub>2</sub> or p<sub>3</sub> respectively (note similary there would be state should agent choose action a1 or a2 and corresponding transition probability would be there
   5) Reward collected is shown as r<sub>1</sub>, r<sub>2</sub> or r<sub>3</sub> based on state landed 
   
+<sub>subscript</sub>
