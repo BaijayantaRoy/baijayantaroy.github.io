@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reinforcement Learning Series - 01
+title: Reinforcement Learning Series - 01 (Key Concepts)
 published: true
 comments: true
 
