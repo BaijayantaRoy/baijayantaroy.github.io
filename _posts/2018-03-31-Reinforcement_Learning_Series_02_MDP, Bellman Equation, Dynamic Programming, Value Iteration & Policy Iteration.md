@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reinforcement Learning Series - 02
+title: Reinforcement Learning Series - 02 (MDP, Bellman Equation, Dynamic Programming, Value Iteration & Policy Iteration)
 published: true
 ---
 
