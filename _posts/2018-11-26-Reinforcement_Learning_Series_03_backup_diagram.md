@@ -36,9 +36,9 @@ In below backup diagram I show how each components can be seen for a better intu
 
 ![Backup Diagram Complete](/images/backup3.png "Backup Diagram Complete")
 
-  1) Value of the state is v<sub>π</sub>(s) at state s
-  2) From state s, agent can take 3 actions (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>)
-  3) Action value is q<sub>π</sub>(a,s) for the action taken wheren a = {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>}
-  4) After the action a<sub>3</sub> is taken agent can land in state s'<sub>1</sub>, s'<sub>2</sub> or s'<sub>3</sub> and transition probability is p<sub>1</sub>, p<sub>2</sub> or p<sub>3</sub> respectively (note similary there would be state should agent choose action a<sub>2</sub> or a<sub>3</sub> and corresponding transition probability would be there
-  5) Reward collected is shown as r<sub>1</sub>, r<sub>2</sub> or r<sub>3</sub> based on state it landed.
+  1. Value of the state is v<sub>π</sub>(s) at state s
+  2. From state s, agent can take 3 actions (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>)
+  3. Action value is q<sub>π</sub>(a,s) for the action taken wheren a = {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>}
+  4. After the action a<sub>3</sub> is taken agent can land in state s'<sub>1</sub>, s'<sub>2</sub> or s'<sub>3</sub> and transition probability is p<sub>1</sub>, p<sub>2</sub> or p<sub>3</sub> respectively (note similary there would be state should agent choose action a<sub>2</sub> or a<sub>3</sub> and corresponding transition probability would be there
+  5. Reward collected is shown as r<sub>1</sub>, r<sub>2</sub> or r<sub>3</sub> based on state it landed.
 
