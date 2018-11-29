@@ -57,4 +57,5 @@ Backup diagram can be used to show graphical representation of RL algorithm thos
 ![Backup Diagram TD(0)](/images/backup8.png "Backup Diagram TD")
 ## **SARSA**
 ![Backup Diagram SARSA](/images/backup9.png "Backup Diagram for SARSA")
+
 That's all for this blog, happy learning.
