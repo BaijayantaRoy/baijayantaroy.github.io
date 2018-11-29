@@ -22,6 +22,11 @@ body {
   font: 18px/1.4 $times;
   color: $darkGray;
 }
+img.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
 
 .container {
   margin: 0 auto;
