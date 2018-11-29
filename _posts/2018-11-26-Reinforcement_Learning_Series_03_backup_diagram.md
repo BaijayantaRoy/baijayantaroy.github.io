@@ -49,13 +49,12 @@ Below diagram shows Bellman Optimality Equation for State value for a specific s
 ![Backup Diagram Optimal](/images/backup5.png "Backup Diagram Optimal")
 
 Backup diagram can be used to show graphical representation of RL algorithm those use value function in the equation. Below are few more well known algorithm (I will cover them in future blogs) those can be easily understood when we refer the backup diagram.
-
+## **Monte Carlo State Value**
 ![Backup Diagram MC State Value](/images/backup6.png "Backup Diagram MC State Value")
-
+## **Monte Carlo State Action Value**
 ![Backup Diagram MC State Action Value](/images/backup7.png "Backup Diagram MC State Action Value")
-
+## **Temporal Difference TD(0)**
 ![Backup Diagram TD(0)](/images/backup8.png "Backup Diagram TD")
-
+## **SARSA**
 ![Backup Diagram SARSA](/images/backup9.png "Backup Diagram for SARSA")
-
 That's all for this blog, happy learning.
