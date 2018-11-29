@@ -10,7 +10,7 @@ before this blog.**_
 
 In first two posts I covered basic concepts, building blocks of reinforcement learning and briefly covered MDP, Bellman equations and Dynamic programming.
 
-In this post I will go in details about backup diagram. As we know picture tells a thousand story; backup diagram gives a visual representation of different algorithm and models in Reinforcement Learning.
+In this post I will go in details about backup diagram. As we know a picture is worth a thousand words; backup diagram gives a visual representation of different algorithm and models in Reinforcement Learning.
 
 Backup process (Update operation) is the graphical representation of algorithm by representing state, action, state transition, reward etc.. Value function (state or state-action) is **transferred back** to a state (or a state-action) from its successor state or state-action.
 
