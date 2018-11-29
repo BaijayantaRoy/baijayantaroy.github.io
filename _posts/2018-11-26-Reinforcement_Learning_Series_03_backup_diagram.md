@@ -44,7 +44,6 @@ In below backup diagram I show how each components are linked for a better intui
   5. Reward collected is shown as r<sub>1</sub>, r<sub>2</sub> or r<sub>3</sub> based on state it lands.
 
 ## **Backup diagram Optimal State Value and Optimal Action Value**
-
 Below diagram shows Bellman Optimality Equation for State value for a specific state s and Bellman Optimality equation for State Action value for action a taken from state s. Its the max action (action that yields maximum state value in successor state) from the state that ensures optimality as per the Bellman Optimality equation.
 
 ![Backup Diagram Optimal](/images/backup5.png "Backup Diagram Optimal")
