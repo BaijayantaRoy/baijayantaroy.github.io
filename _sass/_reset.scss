@@ -23,6 +23,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+img.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
 //
 // HTML5 display-role reset for older browsers
 article, aside, details, figcaption, figure,
