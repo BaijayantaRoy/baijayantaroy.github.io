@@ -53,6 +53,12 @@ Backup diagram can be used to show graphical representation of RL algorithm thos
 
 ### **Monte Carlo estimation of State Value**
 ![Backup Diagram MC State Value](/images/backup6.png "Backup Diagram MC State Value")
+
 ### **Monte Carlo estimation of State Action Value**
+![Backup Diagram MC State Action Value](/images/backup7.png "Backup Diagram MC State Action Value")
 
 ### **TD(0)**
+![Backup Diagram TD(0)](/images/backup8.png "Backup Diagram TD(0)")
+
+### **SARSA**
+![Backup Diagram SARSA](/images/backup9.png "Backup Diagram for SARSA")
