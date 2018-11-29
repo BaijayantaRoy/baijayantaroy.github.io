@@ -8,7 +8,7 @@ _**This is a part of series of Blogs on Reinforcement Learning (RL), you may wan
 [02](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_02/)
 before this blog.**_
 
-In first two post I covered basic concepts, building blocks of reinforcement learning and briefly covered fundamental concept of MDP, Bellman equations and Dynamic programming.
+In first two posts I covered basic concepts, building blocks of reinforcement learning and briefly covered MDP, Bellman equations and Dynamic programming.
 
 In this post I will go in details about backup diagram. As we know picture tells a thousand story; backup diagram gives a visual representation of different algorithm and models in Reinforcement Learning.
 
