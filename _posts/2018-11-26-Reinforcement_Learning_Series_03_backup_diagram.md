@@ -43,4 +43,16 @@ In below backup diagram I show how each components are linked for a better intui
   4. Here agent has taken action a<sub>3</sub>. It can land in state s'<sub>1</sub>, s'<sub>2</sub> or s'<sub>3</sub> with transition probability p<sub>1</sub>, p<sub>2</sub> or p<sub>3</sub> respectively (note similarly there would be different states should agent choose action a<sub>2</sub> or a<sub>3</sub> and corresponding transition probability would be applicable.
   5. Reward collected is shown as r<sub>1</sub>, r<sub>2</sub> or r<sub>3</sub> based on state it lands.
 
+## **Backup diagram Optimal State Value and Optimal Action Value**
+
+Below diagram shows Bellman Optimality Equation for State value for a specific state s and Bellman Optimality equation for State Action value for action a taken from state s. Its the max action (action that yields maximum state value in successor state) from the state that ensures optimality as per the Bellman Optimality equation.
+
 ![Backup Diagram Optimal](/images/backup5.png "Backup Diagram Optimal")
+
+Backup diagram can be used to show graphical representation of RL algorithm those use value function in the equation. Below are few more well known algorithm (I will cover them in future blogs) those can be easily understood when we refer the backup diagram.
+
+### **Monte Carlo estimation of State Value**
+![Backup Diagram MC State Value](/images/backup6.png "Backup Diagram MC State Value")
+### **Monte Carlo estimation of State Action Value**
+
+### **TD(0)**
