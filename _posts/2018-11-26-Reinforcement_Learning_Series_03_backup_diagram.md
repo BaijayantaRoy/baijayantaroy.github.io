@@ -22,7 +22,7 @@ In a backup diagram state value is represented by a hollow circle while a state-
 Now I will go through how a state value can be shown using backup diagrams.
 
 ![Backup Diagram State Value](/images/backup2.png "Backup Diagram State value")
-As shown in above diagram:
+
   1. s is the starting state and it is the root node
   2. from state s there can be three action as shown by arrow and agent take action as per policy π
   3. state action value or action is shown by solid circle (it is the convention that action is taken from a state and reward is received after the action is taken ).
