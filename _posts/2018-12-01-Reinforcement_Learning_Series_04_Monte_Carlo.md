@@ -35,13 +35,10 @@ Also we can write return as below for T time steps :
              .
              (discount factor )<sup>T-1</sup> times **reward** from time step T
 
+## **Monte Carlo State Value**
+![Backup Diagram MC State Value](/images/backup6.png "Backup Diagram MC State Value")
+
 There are two types of MC learning policy evaluation (prediction) methods:
 
 1. first-visit
 2. Every-visit
-
-
-## **Monte Carlo State Value**
-![Backup Diagram MC State Value](/images/backup6.png "Backup Diagram MC State Value")
-## **Monte Carlo State Action Value**
-![Backup Diagram MC State Action Value](/images/backup7.png "Backup Diagram MC State Action Value")
