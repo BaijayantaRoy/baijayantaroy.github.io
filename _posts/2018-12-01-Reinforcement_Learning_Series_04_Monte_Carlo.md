@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reinforcement Learning Series - 04 (Monte Carlo Method)
+title: Reinforcement Learning Series - 04 (Monte Carlo learning)
 published: true
 ---
 
