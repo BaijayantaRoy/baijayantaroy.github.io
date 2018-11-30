@@ -9,12 +9,12 @@ _**This is a part of series of Blogs on Reinforcement Learning (RL), you may wan
 In this blog I will cover Monte Carlo Method of reinforcement learning. I have briefly covered Dynamic programming (Value Iteration and Policy Iteration) method in 2nd post. In Dynamic programming we need a model(agent knows the MDP transition and rewards) and agent does **planning** (once model is available agent need to plan its action in each state). There is no real learning by the agent in Dynamic programming method.
 
 Monte Carlo method on the other hand is a very simple concept where agent learn about the states and reward when it interacts with the environment. In this method agent generate experienced samples and then based on average return, value is calculated for a state or state-action. Below are key characteristics of Monte Carlo (MC) method:
-    [ ] There is no model (agent does not know state MDP transitions)
-    [ ] agent **learn** from **sampled** experience
-    [ ] learn state value v<sub>π</sub>(s) under policy π by experiencing **average** return from all sampled episodes (value = average return)
-    [ ] only after a **complete episode**, values are updated (because of this algorithm convergence is slow and update happens after a episode is Complete)
-    [ ] There is no bootstrapping
-    [ ] Only can be used in **episodic problems**
+    [ ] There is no model (agent does not know state MDP transitions)\s\s
+    [ ] agent **learn** from **sampled** experience\s\s
+    [ ] learn state value v<sub>π</sub>(s) under policy π by experiencing **average** return from all sampled episodes (value = average return)\s\s
+    [ ] only after a **complete episode**, values are updated (because of this algorithm convergence is slow and update happens after a episode is Complete)\s\s
+    [ ] There is no bootstrapping\s\s
+    [ ] Only can be used in **episodic problems**\s\s
 
 Consider a real life analogy; Monte Carlo learning is like annual examination where student completes its episode at the end of the year. Here result of annual exam is like return obtained by the student. Now if the goal of the problem is to find how students score during a calendar year (which is a episode here) for a class, we can take sample result of some student and then calculate mean result to find score for a class (don't take the analogy point by point but on a holistic level I think you can get the essence of MC learning). Similarly we have TD learning  or temporal difference learning that we will cover in future blog, can be thought like a weekly or monthly examination (student can adjust their performance based on this score (reward received) after every small interval and final score is accumulation of the all weekly tests (total rewards)).
 
@@ -34,8 +34,8 @@ Also we can write return as below for T time steps :
              .
              (discount factor )<sup>T-1</sup> times **reward** from time step T
 
-There are two types of MC learning policy evaluation (prediction) methods:
-    1. first-visit
+There are two types of MC learning policy evaluation (prediction) methods:\s\s
+    1. first-visit\s\s
     2. Every-visit
 
 
