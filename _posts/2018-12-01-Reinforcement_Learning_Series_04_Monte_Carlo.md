@@ -35,9 +35,10 @@ Also we can write return as below for T time steps :
              .
              (discount factor )<sup>T-1</sup> times **reward** from time step T
 
-There are two types of MC learning policy evaluation (prediction) methods:\s\s
-    1. first-visit\s\s
-    2. Every-visit
+There are two types of MC learning policy evaluation (prediction) methods:
+
+1. first-visit
+2. Every-visit
 
 
 ## **Monte Carlo State Value**
