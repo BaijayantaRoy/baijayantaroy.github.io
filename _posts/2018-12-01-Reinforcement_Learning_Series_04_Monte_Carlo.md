@@ -25,9 +25,21 @@ Value function = Expected **Return**
 
 Expected return is equal to discounted sum of all rewards.
 
-In Monte Carlo Method instead of expected return we use empirical return that agent has sampled based on its experience by following the policy.
+In Monte Carlo Method instead of expected return we use empirical return that agent has sampled based following the policy.
 
 ![Diagram MC State Value](/images/MC03.png "MC State Value")
+
+If we go back to our very first example of gem collection, agent follows policy and complete an episode, along the way in each step it collects rewards in the form of gem. To get state value agent sum-up all the gems collected after each episode starting from that state. Refer to below diagram where 3 samples collected starting from State S<sub>05</sub>. Total reward collected (discount factor is considered as 1 for simplicity) in each episode as follows:
+![Diagram MC State Value example](/images/MC04.png "MC State Value example")
+Sample 1 = 2 + 1 + 2 + 2 + 1 + 5 = 13 gems
+
+Sample 2 = 2 + 3 + 1 + 3 + 1 + 5 = 15 gems
+
+Sample 3 = 2 + 3 + 1 + 3 + 1 + 5 = 15 gems
+
+Observed mean return based on 3 samples) = (13 + 15 + 15)/3 = 14.33 gems
+
+Thus State value as per Monte Carlo Method, v<sub>π</sub>(s<sub>05</sub>) is 14.33 gems based on 3 episodes following policy π.
 
 ## **Monte Carlo Backup diagram**
 ![Backup Diagram MC State Value](/images/MC02.png "Backup Diagram MC")
