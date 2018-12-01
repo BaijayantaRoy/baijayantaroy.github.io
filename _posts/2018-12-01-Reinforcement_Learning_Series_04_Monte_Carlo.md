@@ -22,8 +22,11 @@ Consider a real life analogy; Monte Carlo learning is like annual examination wh
 ![MC analogy](/images/MC01.png "MC and TD analogy")
 
 Value function = Expected **Return**
+
 Expected return is equal to discounted sum of all rewards.
+
 In Monte Carlo Method instead of expected return we use empirical return that agent has sampled based on its experience by following the policy.
+
 ![Diagram MC State Value](/images/MC03.png "MC State Value")
 
 ## **Monte Carlo Backup diagram**
