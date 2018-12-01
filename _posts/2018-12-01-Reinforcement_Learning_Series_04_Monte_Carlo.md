@@ -44,9 +44,33 @@ Observed mean return (based on 3 samples) = (13 + 15 + 15)/3 = 14.33 gems
 Thus state value as per Monte Carlo Method, v<sub>π</sub>(S<sub>05</sub>) is 14.33 gems based on 3 samples following policy π.
 
 ## **Monte Carlo Backup diagram**
+
+Monte Carlo Backup diagram would look like below (refer to [3rd blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_03_backup_diagram/) post for more on backup diagram)
 ![Backup Diagram MC State Value](/images/MC02.png "Backup Diagram MC")
 
 There are two types of MC learning policy evaluation (prediction) methods:
 
 1. first-visit
 2. Every-visit
+
+### **First Visit Monte Carlo Method**
+In this case in an episode first visit of the state is counted (even if agent comes-back to the same state multiple time in the episode, only first visit will be counted). Detailed step as below:
+
+1. To evaluate state s, first we set number of visit, N(s) = 0, Total return TR(s) = 0 (these values are updated across episodes)
+2. The **first** time-step t that state s is visited in an episode, increment counter N(s) = N(s) + 1
+4. Increment total return TR(s) = TR(s) + G<sub>t</sub>
+5. Value is estimated by mean return V(s) = TR(s)/N(s)
+6. By law of large numbers, V(s) -> v<sub>π</sub>(s) (this is called true value under policy π) as N(s) approaches infinity
+
+Refer to below diagram for better understanding of counter increment.
+
+### **Every Visit Monte Carlo Method**
+In this case in an episode every visit of the state is counted. Detailed step as below:
+
+1. To evaluate state s, first we set number of visit, N(s) = 0, Total return TR(s) = 0 (these values are updated across episodes)
+2. **every** time-step t that state s is visited in an episode, increment counter N(s) = N(s) + 1
+4. Increment total return TR(s) = TR(s) + G<sub>t</sub>
+5. Value is estimated by mean return V(s) = TR(s)/N(s)
+6. By law of large numbers, V(s) -> v<sub>π</sub>(s) (this is called true value under policy π) as N(s) approaches infinity
+
+Refer to below diagram for better understanding of counter increment.
