@@ -64,6 +64,8 @@ In this case in an episode first visit of the state is counted (even if agent co
 
 Refer to below diagram for better understanding of counter increment.
 
+![MC First Visit](/images/MC05.png "MC First Visit")
+
 ### **Every Visit Monte Carlo Method**
 In this case in an episode every visit of the state is counted. Detailed step as below:
 
@@ -74,3 +76,25 @@ In this case in an episode every visit of the state is counted. Detailed step as
 6. By law of large numbers, V(s) -> v<sub>π</sub>(s) (this is called true value under policy π) as N(s) approaches infinity
 
 Refer to below diagram for better understanding of counter increment.
+
+![MC Every Visit](/images/MC06.png "MC Every Visit")
+
+Usually MC is updated incrementally after every episode (no need to store old episode values, it could be a running mean value for the state updated after every episode).
+
+Update V(s) incrementally after episode S<sub>1</sub>, A<sub>2</sub>, R<sub>3</sub>,....,S<sub>T</sub>
+For each state S<sub>t</sub> with return G<sub>t</sub>
+N(S<sub>t</sub>) <--  N(S<sub>t</sub>) + 1
+V(S<sub>t</sub>) <--- V(S<sub>t</sub>) + (1/N(S<sub>t</sub>))(G<sub>t</sub> - V(S<sub>t</sub>)
+Usually in place of 1/N(S<sub>t</sub>) a constant learning rate (α) is used and above equation becomes :
+
+V(S<sub>t</sub>) <--- V(S<sub>t</sub>) + (1/α)(G<sub>t</sub> - V(S<sub>t</sub>)
+
+For Policy improvement Generalized Policy Improvement concept is used to update policy using action value function of Monte Carlo Method.
+
+Monte Carlo Methods have below advantages :
+- MC has high variance but zero bias
+- Good convergence properties (even with function approximation)
+- Not very sensitive to initial value
+- Very simple to understand and use
+
+That's all for this blog, happy learning.
