@@ -17,7 +17,9 @@ Monte Carlo method on the other hand is a very simple concept where agent learn 
 5. There is no bootstrapping
 6. Only can be used in **episodic problems**
 
-Consider a real life analogy; Monte Carlo learning is like annual examination where student completes its episode at the end of the year. Here result of annual exam is like return obtained by the student. Now if the goal of the problem is to find how students score during a calendar year (which is a episode here) for a class, we can take sample result of some student and then calculate mean result to find score for a class (don't take the analogy point by point but on a holistic level I think you can get the essence of MC learning). Similarly we have TD learning  or temporal difference learning that we will cover in future blog, can be thought like a weekly or monthly examination (student can adjust their performance based on this score (reward received) after every small interval and final score is accumulation of the all weekly tests (total rewards)).
+Consider a real life analogy; Monte Carlo learning is like annual examination where student completes its episode at the end of the year. Here result of annual exam is like return obtained by the student. Now if the goal of the problem is to find how students score during a calendar year (which is a episode here) for a class, we can take sample result of some student and then calculate mean result to find score for a class (don't take the analogy point by point but on a holistic level I think you can get the essence of MC learning). Similarly we have TD learning  or temporal difference learning (TD learning is like updating value in every time step and does not require wait till end of episode to update the values) that we will cover in future blog, can be thought like a weekly or monthly examination (student can adjust their performance based on this score (reward received) after every small interval and final score is accumulation of the all weekly tests (total rewards)).
+
+![MC analogy](/images/MC01.png "MC and TD analogy")
 
 Recall,
 
