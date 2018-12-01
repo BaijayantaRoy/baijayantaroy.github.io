@@ -45,7 +45,8 @@ Thus state value as per Monte Carlo Method, v<sub>π</sub>(S<sub>05</sub>) is 14
 
 ## **Monte Carlo Backup diagram**
 
-Monte Carlo Backup diagram would look like below (refer to [3rd blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_03_backup_diagram/) post for more on backup diagram)
+Monte Carlo Backup diagram would look like below (refer to [3rd blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_03_backup_diagram/) post for more on backup diagram.
+
 ![Backup Diagram MC State Value](/images/MC02.png "Backup Diagram MC")
 
 There are two types of MC learning policy evaluation (prediction) methods:
@@ -60,7 +61,7 @@ In this case in an episode first visit of the state is counted (even if agent co
 2. The **first** time-step t that state s is visited in an episode, increment counter N(s) = N(s) + 1
 4. Increment total return TR(s) = TR(s) + G<sub>t</sub>
 5. Value is estimated by mean return V(s) = TR(s)/N(s)
-6. By law of large numbers, V(s) -> v<sub>π</sub>(s) (this is called true value under policy π) as N(s) approaches infinity
+6. By law of large numbers, V(s) --->  v<sub>π</sub>(s) (this is called true value under policy π) as N(s) approaches infinity
 
 Refer to below diagram for better understanding of counter increment.
 
@@ -73,7 +74,7 @@ In this case in an episode every visit of the state is counted. Detailed step as
 2. **every** time-step t that state s is visited in an episode, increment counter N(s) = N(s) + 1
 4. Increment total return TR(s) = TR(s) + G<sub>t</sub>
 5. Value is estimated by mean return V(s) = TR(s)/N(s)
-6. By law of large numbers, V(s) -> v<sub>π</sub>(s) (this is called true value under policy π) as N(s) approaches infinity
+6. By law of large numbers, V(s) --->  v<sub>π</sub>(s) (this is called true value under policy π) as N(s) approaches infinity
 
 Refer to below diagram for better understanding of counter increment.
 
@@ -84,13 +85,13 @@ Usually MC is updated incrementally after every episode (no need to store old ep
 Update V(s) incrementally after episode S<sub>1</sub>, A<sub>2</sub>, R<sub>3</sub>,....,S<sub>T</sub>
 For each state S<sub>t</sub> with return G<sub>t</sub>
 
-N(S<sub>t</sub>) <--  N(S<sub>t</sub>) + 1
+N(S<sub>t</sub>) <---  N(S<sub>t</sub>) + 1
 
-V(S<sub>t</sub>) <--- V(S<sub>t</sub>) + (1/N(S<sub>t</sub>))(G<sub>t</sub> - V(S<sub>t</sub>)
+V(S<sub>t</sub>) <---  V(S<sub>t</sub>) + (1/N(S<sub>t</sub>))(G<sub>t</sub> - V(S<sub>t</sub>)
 
 Usually in place of 1/N(S<sub>t</sub>) a constant learning rate (α) is used and above equation becomes :
 
-V(S<sub>t</sub>) <--- V(S<sub>t</sub>) + (1/α)(G<sub>t</sub> - V(S<sub>t</sub>)
+V(S<sub>t</sub>) <---  V(S<sub>t</sub>) + (1/α)(G<sub>t</sub> - V(S<sub>t</sub>)
 
 For Policy improvement, Generalized Policy Improvement concept is used to update policy using action value function of Monte Carlo Method.
 
