@@ -83,18 +83,28 @@ Usually MC is updated incrementally after every episode (no need to store old ep
 
 Update V(s) incrementally after episode S<sub>1</sub>, A<sub>2</sub>, R<sub>3</sub>,....,S<sub>T</sub>
 For each state S<sub>t</sub> with return G<sub>t</sub>
+
 N(S<sub>t</sub>) <--  N(S<sub>t</sub>) + 1
+
 V(S<sub>t</sub>) <--- V(S<sub>t</sub>) + (1/N(S<sub>t</sub>))(G<sub>t</sub> - V(S<sub>t</sub>)
+
 Usually in place of 1/N(S<sub>t</sub>) a constant learning rate (α) is used and above equation becomes :
 
 V(S<sub>t</sub>) <--- V(S<sub>t</sub>) + (1/α)(G<sub>t</sub> - V(S<sub>t</sub>)
 
-For Policy improvement Generalized Policy Improvement concept is used to update policy using action value function of Monte Carlo Method.
+For Policy improvement, Generalized Policy Improvement concept is used to update policy using action value function of Monte Carlo Method.
 
 Monte Carlo Methods have below advantages :
-- MC has high variance but zero bias
+- zero bias
 - Good convergence properties (even with function approximation)
 - Not very sensitive to initial value
 - Very simple to understand and use
+
+But it has below limitations as well:
+
+- MC must wait until end of episode before return is known
+- MC has high variance
+- MC can only learn from complete sequences
+- MC only works for episodic (terminating) environments
 
 That's all for this blog, happy learning.
