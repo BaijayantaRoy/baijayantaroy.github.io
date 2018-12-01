@@ -39,7 +39,7 @@ In below backup diagram I show how each components are linked for a better intui
 
   1. Value of the state is v<sub>π</sub>(s) at state s
   2. From state s, agent can take 3 actions (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>)
-  3. Action value is q<sub>π</sub>(a,s) for the action taken where a = {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>}
+  3. Action value is q<sub>π</sub>(s,a) for the action taken where a = {a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>}
   4. Here agent has taken action a<sub>3</sub>. It can land in state s'<sub>1</sub>, s'<sub>2</sub> or s'<sub>3</sub> with transition probability p<sub>1</sub>, p<sub>2</sub> or p<sub>3</sub> respectively (note similarly there would be different states should agent choose action a<sub>2</sub> or a<sub>3</sub> and corresponding transition probability would be applicable.
   5. Reward collected is shown as r<sub>1</sub>, r<sub>2</sub> or r<sub>3</sub> based on state it lands.
 
