@@ -21,7 +21,8 @@ Consider a real life analogy; if Monte Carlo learning is like annual examination
 
 # **TD(0)**
 
-TD(0) is the simplest form of TD learning. In this form of TD learning, after every step value function is updated with the value of next state and along the way reward obtained. This observed reward is the key factor that keeps the learning grounded and algorithm converges after sufficient number of sampling (in the limit of infinity). Below is the backup diagram of TD(0).
+TD(0) is the simplest form of TD learning. In this form of TD learning, after every step value function is updated with the value of next state and along the way reward obtained. This observed reward is the key factor that keeps the learning grounded and algorithm converges after sufficient number of sampling (in the limit of infinity). Below is the backup diagram of TD(0) and example of TD(0) for our gem collection and examination example.
+
 ![TD(0)](/images/TD03.png "TD(0)")
 
 TD(0) can be represented with equation in below diagram. Equation 1 is generally shown in literature but I find same equation written as per Equation 2 is more intuitive. We have α as learning factor, γ as discount factor. Here value of a state S is getting updated in next time step (t+1) based on the reward r<sub>t+1</sub> observed after the time step t with the expected value of S in time step t+1. So its the bootstrap of S at time step t using the estimation from time step t+1 while r<sub>t+1</sub> is the observed reward (real thing that makes the algorithm grounded)  TD target and TD error as shown below are two important component of the equation which are used in many other areas of RL.
@@ -30,9 +31,17 @@ TD(0) can be represented with equation in below diagram. Equation 1 is generally
 
 # **SARSA**
 
+TD algorithm for control or improvement is called SARSA. SARSA name came from the fact that agent take one step from one state-action value pair to another state-action value pair and along the way collect reward R (so its the S<sub>t</sub>,A<sub>t</sub>,R<sub>t+1</sub>,S<sub>t+1</sub> & A<sub>t+1</sub> tuple that creates the term **S,A,R,S,A**). SARSA is **on-policy** method. SARSA use action value function Q and follow the policy π. **GPI** (Generalized Policy Iteration as described in blog-2) is used to take action based on policy π (**ε-greedy** to ensure exploration and greedy to improve the policy).
+
 ![SARSA](/images/TD04.png "SARSA")
 
+SARSA can be represented with equation in below diagram. Equation 1 is generally shown in literature but I find same equation written as per Equation 2 is more intuitive. We have α as learning factor, γ as discount factor. Action value version of TD target and TD error shown as well.
+
+![SARSA Equation](/images/TD04-01.png "SARSA Equation")
+
 # **Q-Learning**
+
+Q-learning is off-policy algorithm. In Off-policy learning we evaluate target policy (π) while following another policy called behavior policy (μ).
 
 ![Q-Learning](/images/TD06.png "Q-Learning")
 
