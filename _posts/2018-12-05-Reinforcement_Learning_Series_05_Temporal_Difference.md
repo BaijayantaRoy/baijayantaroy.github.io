@@ -19,7 +19,7 @@ Below are key characteristics of Monte Carlo (MC) method:
 Consider a real life analogy; if Monte Carlo learning is like annual examination where student completes its episode at the end of the year. Similarly we have TD learning , can be thought like a weekly or monthly examination (student can adjust their performance based on this score (reward received) after every small interval and final score is accumulation of the all weekly tests (total rewards)).
 
 
-## **TD(0)**
+# **TD(0)**
 
 TD(0) is the simplest form of TD learning. In this form of TD learning, after every step value function is updated with the value of next state and along the way reward obtained. This observed reward is the key factor that keeps the learning grounded and algorithm converges after sufficient number of sampling (in the limit of infinity). Below is the backup diagram of TD(0).
 ![TD(0)](/images/TD03.png "TD(0)")
@@ -28,15 +28,15 @@ TD(0) can be represented with equation in below diagram. Equation 1 is generally
 
 ![TD(0)](/images/TD03-01.png "TD(0) Equation")
 
-### **SARSA**
+# **SARSA**
 
 ![SARSA](/images/TD04.png "SARSA")
 
-### **Q-Learning**
+# **Q-Learning**
 
 ![Q-Learning](/images/TD06.png "Q-Learning")
 
-### **Expected SARSA**
+# **Expected SARSA**
 
 ![Expected SARSA](/images/TD05.png "Expected SARSA")
 
