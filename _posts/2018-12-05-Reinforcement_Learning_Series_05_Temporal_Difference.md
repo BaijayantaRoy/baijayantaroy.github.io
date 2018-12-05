@@ -48,6 +48,5 @@ But it has below limitations as well:
 
 - TD is a biased estimation
 - TD is more sensitive to initial value
--
 
 That's all for this blog, happy learning.
