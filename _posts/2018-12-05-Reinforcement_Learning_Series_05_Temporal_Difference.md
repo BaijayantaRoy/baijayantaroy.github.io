@@ -29,7 +29,7 @@ Consider a real life analogy; if Monte Carlo learning is like annual examination
 
 ### **Q-Learning**
 
-![TD(0)](/images/TD02.png "TD(0)")
+![Q-Learning](/images/TD06.png "TD(0)")
 
 ### **Expected SARSA**
 
