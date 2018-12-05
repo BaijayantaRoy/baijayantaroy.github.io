@@ -16,8 +16,9 @@ Below are key characteristics of Monte Carlo (MC) method:
 4. It can learn from **incomplete episode** thus this method can be used in continuous problems as well
 5. TD updates a guess towards a guess and revise the guess based on real experience
 
-Consider a real life analogy; if Monte Carlo learning is like annual examination where student completes its episode at the end of the year. Similarly we have TD learning , can be thought like a weekly or monthly examination (student can adjust their performance based on this score (reward received) after every small interval and final score is accumulation of the all weekly tests (total rewards)).
+To understand this better, consider a real life analogy; if Monte Carlo learning is like annual examination where student completes its episode at the end of the year. Similarly we have TD learning , can be thought like a weekly or monthly examination (student can adjust their performance based on this score (reward received) after every small interval and final score is accumulation of the all weekly tests (total rewards)).
 
+![TD(0)VS MC](/images/TD01.png "TD(0)VS MC")
 
 # **TD(0)**
 
@@ -31,11 +32,11 @@ TD(0) can be represented with equation in below diagram. Equation 1 is generally
 
 # **SARSA**
 
-TD algorithm for control or improvement is called SARSA. SARSA name came from the fact that agent take one step from one state-action value pair to another state-action value pair and along the way collect reward R (so its the S<sub>t</sub>,A<sub>t</sub>,R<sub>t+1</sub>,S<sub>t+1</sub> & A<sub>t+1</sub> tuple that creates the term **S,A,R,S,A**). SARSA is **on-policy** method. SARSA use action value function Q and follow the policy π. **GPI** (Generalized Policy Iteration as described in blog-2) is used to take action based on policy π (**ε-greedy** to ensure exploration and greedy to improve the policy).
+One of the TD algorithms for control or improvement is SARSA. SARSA name came from the fact that agent take one step from one state-action value pair to another state-action value pair and along the way collect reward R (so its the S<sub>t</sub>, A<sub>t</sub>, R<sub>t+1</sub>, S<sub>t+1</sub> & A<sub>t+1</sub> tuple that creates the term **S,A,R,S,A**). SARSA is **on-policy** method. SARSA use action value function Q and follow the policy π. **GPI** (Generalized Policy Iteration as described in blog-2) is used to take action based on policy π (**ε-greedy** to ensure exploration as well as greedy to improve the policy).
 
 ![SARSA](/images/TD04.png "SARSA")
 
-SARSA can be represented with equation in below diagram. Equation 1 is generally shown in literature but I find same equation written as per Equation 2 is more intuitive. We have α as learning factor, γ as discount factor. Action value version of TD target and TD error shown as well.
+SARSA can be represented with equation as shown in below diagram. Equation 1 is generally shown in literature but I find same equation written as per Equation 2 is more intuitive. We have α as learning factor, γ as discount factor. Action value version of TD target and TD error shown as well.
 
 ![SARSA Equation](/images/TD04-01.png "SARSA Equation")
 
