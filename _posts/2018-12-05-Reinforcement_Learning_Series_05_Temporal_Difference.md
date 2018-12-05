@@ -42,13 +42,16 @@ SARSA can be represented with equation as shown in below diagram. Equation 1 is 
 
 # **Q-Learning**
 
-Q-learning is off-policy algorithm. In Off-policy learning we evaluate target policy (π) while following another policy called behavior policy (μ).
+Q-learning is off-policy algorithm. In Off-policy learning we evaluate target policy (π) while following another policy called behavior policy (μ) (this is like a robot following a video or agent learning based on experience gained by another agent). DQN (Deep Q-Learning) which made a Nature front page entry, is a Q-learning based algorithm (with few additional tricks) that surpassed human level expertise in Atari game (I will cover DQN in details in a future blog post). In Q-learning target policy is greedy policy and behavior policy is ε-greedy policy.
 
-![Q-Learning](/images/TD06.png "Q-Learning")
+![Q-Learning](/images/TD05.png "Q-Learning")
 
 # **Expected SARSA**
 
-![Expected SARSA](/images/TD05.png "Expected SARSA")
+![Expected SARSA](/images/TD06.png "Expected SARSA")
+
+
+# **Advantage and Disadvantage of TD Learning Methods**
 
 TD Methods have below advantages :
 
@@ -63,5 +66,9 @@ But it has below limitations as well:
 
 - TD is a biased estimation
 - TD is more sensitive to initial value
+
+
+Here we have covered one step TD methods but there are multi-step TD methods as well as combination of TD & MC like TD(λ) algorithms. I will cover them in a future post.
+
 
 That's all for this blog, happy learning.
