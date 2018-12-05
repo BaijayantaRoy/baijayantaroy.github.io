@@ -52,8 +52,16 @@ Refer to below diagram for Q-learning algorithm written in two different way. Lo
 
 # **Expected SARSA**
 
+Expected SARSA is just like Q-learning except that instead of the
+maximum over next state–action pairs it uses the expected value, taking into account
+how likely each action is under the current policy. Given the next state, Q-learning algorithm moves **deterministically** in the same direction while SARSA follows as per **expectation**,
+and accordingly it is called Expected SARSA. Its backup diagram is shown below.
+
 ![Expected SARSA](/images/TD06.png "Expected SARSA")
 
+Refer to below diagram for Expected SARSA algorithm written in two different way. Difference with Q-learning is highlighted.
+
+![Expected SARSA Equation](/images/TD06-01.png "Expected SARSA Equation")
 
 # **Advantage and Disadvantage of TD Learning Methods**
 
