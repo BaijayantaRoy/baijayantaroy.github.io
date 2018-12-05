@@ -46,6 +46,10 @@ Q-learning is off-policy algorithm. In Off-policy learning we evaluate target po
 
 ![Q-Learning](/images/TD05.png "Q-Learning")
 
+Refer to below diagram for Q-learning algorithm written in two different way. Look how target and behavior policy actions are represented in the equation.
+
+![Q-Learning Equation](/images/TD05-01.png "Q-Learning Equation")
+
 # **Expected SARSA**
 
 ![Expected SARSA](/images/TD06.png "Expected SARSA")
