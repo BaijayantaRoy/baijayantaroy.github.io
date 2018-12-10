@@ -57,9 +57,12 @@ Policy iteration includes: **policy evaluation** + **policy improvement**, and t
 That's all for this post, in next post we will explore more concepts around Reinforcement Learning
 
 ## Blogs
-Reinforcement Learning Series - 01 (Key Concepts)  |https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01_key_concepts/  
---|--
-Reinforcement Learning Series - 02 (MDP, Bellman Equation, Dynamic Programming, Value Iteration & Policy Iteration)  |   https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_02_MDP,-Bellman-Equation,-Dynamic-Programming,-Value-Iteration-&-Policy-Iteration/
-Reinforcement Learning Series - 03 (Backup Diagram)  |  https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_03_backup_diagram/
-Reinforcement Learning Series - 04 (Monte Carlo learning)  |  https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_04_Monte_Carlo/
-Reinforcement Learning Series - 05 (Temporal-Difference learning )  |  https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_05_Temporal_Difference/
+[Reinforcement Learning Series - 01 (Key Concepts)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01_key_concepts/)  
+
+[Reinforcement Learning Series - 02 (MDP, Bellman Equation, Dynamic Programming, Value Iteration & Policy Iteration)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_02_MDP,-Bellman-Equation,-Dynamic-Programming,-Value-Iteration-&-Policy-Iteration/)
+
+[Reinforcement Learning Series - 03 (Backup Diagram)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_03_backup_diagram/)
+
+[Reinforcement Learning Series - 04 (Monte Carlo learning)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_04_Monte_Carlo/)
+
+[Reinforcement Learning Series - 05 (Temporal-Difference learning )](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_05_Temporal_Difference/)
