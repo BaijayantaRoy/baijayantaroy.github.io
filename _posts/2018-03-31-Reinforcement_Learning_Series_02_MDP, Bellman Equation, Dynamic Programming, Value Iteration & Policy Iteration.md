@@ -10,7 +10,7 @@ In the [first blog](https://baijayantaroy.github.io/baijayantaroy.github.io/Rein
 
 ![Standard Notation](/images/Notation.png "Standard Notation")
 
-I briefly mentioned exploitation and exploration in first blog. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favorite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exist a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging.
+I briefly mentioned exploitation and exploration in first blog. This concept is inherently linked to human nature where we as human prefer known compared to unknown. For an example going to Restaurant, you can choose to go to your favorite restaurant since you already like the food there but unless and until you try another restaurant you won’t know if there exists a better restaurant. Exploitation is thus going or doing the same action which gives best value from a state (it is often called Greedy action), while Exploration is to try out new action which may give a better return in long run even though immediate reward may not be encouraging.
 
 **Markov Decision Processes:** Markov Decision Process (MDP) is a mathematical representation of a complex decision-making process. (MDP) formally describe an environment for Reinforcement Learning. Environment is fully observable and stationary (meaning rules do not change with time). Almost all RL problems can be formalized using MDP. MDP is defined by:
 
@@ -54,4 +54,12 @@ Value iteration includes: **finding optimal value function** + one **policy extr
 
 Policy iteration includes: **policy evaluation** + **policy improvement**, and the two are repeated iteratively until policy converges
 
-That's all for this post, in next post we will explore more concepts around Reinforcement Learning 
+That's all for this post, in next post we will explore more concepts around Reinforcement Learning
+
+## Blogs
+Reinforcement Learning Series - 01 (Key Concepts)  |https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01_key_concepts/  
+--|--
+Reinforcement Learning Series - 02 (MDP, Bellman Equation, Dynamic Programming, Value Iteration & Policy Iteration)  |   https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_02_MDP,-Bellman-Equation,-Dynamic-Programming,-Value-Iteration-&-Policy-Iteration/
+Reinforcement Learning Series - 03 (Backup Diagram)  |  https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_03_backup_diagram/
+Reinforcement Learning Series - 04 (Monte Carlo learning)  |  https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_04_Monte_Carlo/
+Reinforcement Learning Series - 05 (Temporal-Difference learning )  |  https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_05_Temporal_Difference/
