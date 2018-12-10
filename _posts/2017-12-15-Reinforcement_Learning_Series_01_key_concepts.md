@@ -10,7 +10,7 @@ _**Reinforcement Learning (RL) is one of the most happening field of Machine Lea
 
 
 ### Reinforcement Learning
-Reinforcement learning is learning by interacting with an environment. An RL agent learns from the consequences of its actions, rather than from being explicitly taught and it selects its actions on basis of its past experiences (exploitation) and also by new choices (exploration), which are essentially, trial and error learning just like a child learns. The reinforcement signal that the RL-agent receives is a numerical reward, which encodes the success of an action's outcome, and the agent seeks to learn to select actions that maximize the accumulated reward over time. 
+Reinforcement learning is learning by interacting with an environment. An RL agent learns from the consequences of its actions, rather than from being explicitly taught and it selects its actions on basis of its past experiences (exploitation) and also by new choices (exploration), which are essentially, trial and error learning just like a child learns. The reinforcement signal that the RL-agent receives is a numerical reward, which encodes the success of an action's outcome, and the agent seeks to learn to select actions that maximize the accumulated reward over time.
 
 For learning anything new, understanding basic terminology is very important. To understand RL, reader has to get familiar with below terminology, their meaning and above all how these terms are linked to each other, but before that let’s see one example to understand what Reinforcement Learning means.
 
@@ -30,7 +30,7 @@ Now let's understand each terminology and then we will get back to this problem.
 
 **Value:** Value of is the total amount of reward an agent can expect to accumulate over the period starting from that state. Unlike Reward signal, value function specifies what is good in the _long run_. Since Value is total amount of return from a state, for state S12, value would be 6 gems. We will discuss Value (State Value and Action Value) in subsequent blog.
 
-**Action:** Action is what an agent can do in each state. In above example Robot it can take action like move up or left or right. Given the state, or positions of its two legs, a robot can take steps within a certain distance. There are typically finite (or a fixed range of) actions an agent can take. For example, a robot stride can only be, say, 0.01 meter to 1 meter. The Go program can only put down its piece in one of 19 x 19 (that is 361) positions. 
+**Action:** Action is what an agent can do in each state. In above example Robot it can take action like move up or left or right. Given the state, or positions of its two legs, a robot can take steps within a certain distance. There are typically finite (or a fixed range of) actions an agent can take. For example, a robot stride can only be, say, 0.01 meter to 1 meter. The Go program can only put down its piece in one of 19 x 19 (that is 361) positions.
 
 ![Action that Robot can take](/images/Action.png "Action that Robot can take")
 
@@ -50,3 +50,17 @@ Once we calculate total accumulated rewards then the path followed right is the 
 ![Problem Solution](/images/Optimal_move.png "Problem Solution")
 
 In many RL problem Agent is given small negative reward in each state and a positive reward at terminal or exit state (like Go or Chess game playing Agent only get reward at the end of the game when it has won or lost). RL Agent interacts with Environment and learns slowly over the period by trial and error. Value function and Policy plays a major role in all RL algorithm and we will explore those in subsequent blogs. There are many variations of RL algorithm like Policy based, Value based, Policy-Value combined (Actor Critic Method), Model Free, Model Based, Function Approximation Methods etc. Real life problems has millions of state, thus function approximation is used extensively to solve real life problem. All real life problems requires application of many diverse knowledge areas of AI/ML technique to achieve the intended goal (like Alpha Go Zero uses Convolutional Neural Network (CNN), Monte Carlo Tree Search and RL methods to achieve the superhuman skill in the Go game).
+
+## Blogs in this series
+
+[Reinforcement Learning Series - 01 (Key Concepts)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_01_key_concepts/)  
+
+[Reinforcement Learning Series - 02 (MDP, Bellman Equation, Dynamic Programming, Value Iteration & Policy Iteration)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_02_MDP,-Bellman-Equation,-Dynamic-Programming,-Value-Iteration-&-Policy-Iteration/)
+
+[Reinforcement Learning Series - 03 (Backup Diagram)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_03_backup_diagram/)
+
+[Reinforcement Learning Series - 04 (Monte Carlo learning)](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_04_Monte_Carlo/)
+
+[Reinforcement Learning Series - 05 (Temporal-Difference learning )](https://baijayantaroy.github.io/baijayantaroy.github.io/Reinforcement_Learning_Series_05_Temporal_Difference/)
+
+_Last Updated on Dec 11, 2018_
